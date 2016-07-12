@@ -5,9 +5,9 @@ init your working directory with common useful .sh files
 
 ```bash
 
-$ npm install shm -g
+$ npm install nshm -g
 
-$ shm <command> [args...]
+$ nshm <command> [args...]
 
 ```
 
@@ -15,7 +15,7 @@ $ shm <command> [args...]
 
 ```bash
 
-$ shm add <command_name> -[t|f] [text|path]
+$ nshm add <command_name> -[t|f] [text|path]
 
 ```
 
@@ -24,14 +24,14 @@ $ shm add <command_name> -[t|f] [text|path]
 ```bash
 
 # add file content
-$ shm add commit --file ./my-commit.sh
+$ nshm add commit --file ./my-commit.sh
 # or
-$ shm add commit -f ./my-commit.sh
+$ nshm add commit -f ./my-commit.sh
 
 # add text content
-$ shm add pull --text "git pull"
+$ nshm add pull --text "git pull"
 # or
-$ shm add pull -t "git pull"
+$ nshm add pull -t "git pull"
 
 ```
 
@@ -39,7 +39,7 @@ $ shm add pull -t "git pull"
 
 ```bash
 
-$ shm co <command_name> [command|text] [command|text] [command|text] [...]
+$ nshm co <command_name> [command|text] [command|text] [command|text] [...]
 
 ```
 
@@ -47,7 +47,7 @@ $ shm co <command_name> [command|text] [command|text] [command|text] [...]
 
 ```bash
 
-$ shm co git commit pull "git status"
+$ nshm co git commit pull "git status"
 
 ```
 
@@ -55,7 +55,7 @@ $ shm co git commit pull "git status"
 
 ```bash
 
-$ shm rm <command_name> <command_name> <...> 
+$ nshm rm <command_name> <command_name> <...> 
 
 ```
 
@@ -64,7 +64,7 @@ $ shm rm <command_name> <command_name> <...>
 
 ```bash
 
-$ shm rm commit pull git
+$ nshm rm commit pull git
 
 ```
 
@@ -72,7 +72,7 @@ $ shm rm commit pull git
 
 ```bash
 
-$ shm clean
+$ nshm clean
 
 ```
 
@@ -81,10 +81,10 @@ $ shm clean
 ```bash
 
 # view all names
-$ shm ls
+$ nshm ls
 
 # view all details
-$ shm ls -a
+$ nshm ls -a
 
 ```
 
@@ -95,16 +95,16 @@ $ shm ls -a
 
 ```bash
 
-$ shm add add -t "git add -A"
-$ shm add commit -t "git commit -m 'push'"
-$ shm add pull -t "git push"
+$ nshm add add -t "git add -A"
+$ nshm add commit -t "git commit -m 'push'"
+$ nshm add pull -t "git push"
 
 
-$ shm co git add commit pull
+$ nshm co git add commit pull
 
 # init my directory
 # then we'll get `add.sh` `commit.sh` `pull.sh`
-$ shm git 
+$ nshm git 
 
 ```
 
@@ -115,9 +115,9 @@ $ shm git
 # browserSync cli 
 # here we use `${}` as placeholders
 # for necessary params
-$ shm add bs -t "browser-sync start --server --files \"${files}\" --index \"${index}\" --open \"external\" --reload-debounce --no-notify"
+$ nshm add bs -t "browser-sync start --server --files \"${files}\" --index \"${index}\" --open \"external\" --reload-debounce --no-notify"
 
 # init my directory and get the `bs.sh`
-$ shm bs --file '**' --index 'index.html'
+$ nshm bs --file '**' --index 'index.html'
 
 ```

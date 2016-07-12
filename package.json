@@ -1,13 +1,13 @@
 {
-  "name": "shm",
-  "version": "1.0.0",
+  "name": "nshm",
+  "version": "1.0.1",
   "description": "init your working directory with common useful .sh files",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "shm": "index.js"
+    "nshm": "index.js"
   },
   "repository": {
     "type": "git",
