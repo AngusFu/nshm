@@ -1,4 +1,4 @@
-# nshm ( Node.js `.sh` Scripts Manager )
+# nshm ( Node.js .sh Scripts Manager )
 
 init your working directory with common useful .sh files
 
