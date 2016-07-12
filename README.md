@@ -1,4 +1,4 @@
-# node-add-common-sh
+# nshm ( Node.js `.sh` Scripts Manager )
 
 init your working directory with common useful .sh files
 

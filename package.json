@@ -1,6 +1,6 @@
 {
   "name": "nshm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "init your working directory with common useful .sh files",
   "main": "index.js",
   "scripts": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AngusFu/node-add-common-sh.git"
+    "url": "git+https://github.com/AngusFu/nshm.git"
   },
   "author": "angusfu1126@qq.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AngusFu/node-add-common-sh/issues"
+    "url": "https://github.com/AngusFu/nshm/issues"
   },
-  "homepage": "https://github.com/AngusFu/node-add-common-sh#readme",
+  "homepage": "https://github.com/AngusFu/nshm#readme",
   "dependencies": {
     "colors": "^1.1.2",
     "yargs": "^4.8.0"
