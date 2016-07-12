@@ -2,6 +2,7 @@
 
 init your working directory with common useful .sh files
 
+<a href="https://segmentfault.com/a/1190000005947697#articleHeader0" target="_blank">[中文版]</a>
 
 ```bash
 
