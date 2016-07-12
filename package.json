@@ -1,0 +1,26 @@
+{
+  "name": "shm",
+  "version": "1.0.0",
+  "description": "init your working directory with common useful .sh files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "shm": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngusFu/node-add-common-sh.git"
+  },
+  "author": "angusfu1126@qq.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AngusFu/node-add-common-sh/issues"
+  },
+  "homepage": "https://github.com/AngusFu/node-add-common-sh#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "yargs": "^4.8.0"
+  }
+}
