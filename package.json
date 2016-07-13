@@ -1,6 +1,6 @@
 {
   "name": "nshm",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "init your working directory with common useful .sh files",
   "main": "index.js",
   "scripts": {
