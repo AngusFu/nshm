@@ -89,7 +89,14 @@ $ nshm ls -a
 
 ```
 
+## get version number
 
+```bash
+
+$ nshm -v
+$ nshm --version
+
+```
 
 
 ## Demo-1
