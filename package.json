@@ -21,6 +21,8 @@
   "homepage": "https://github.com/AngusFu/nshm#readme",
   "dependencies": {
     "colors": "^1.1.2",
+    "colors-cli": "^1.0.7",
     "yargs": "^4.8.0"
-  }
+  },
+  "devDependencies": {}
 }
