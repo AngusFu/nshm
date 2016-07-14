@@ -5,5 +5,6 @@
     "git": [
         "pull",
         "commit"
-    ]
+    ],
+    "nodeserver": "http-server -p 8765"
 }
