@@ -1,5 +1,5 @@
 {
-    "bs": "browser-sync start --server --files \"${files}\" --index \"${index}\" --open \"external\" --reload-debounce --no-notify",
+    "bs": "browser-sync start --server --files \"${files}\" --directory --index \"${index}\" --open \"external\" --reload-debounce --no-notify",
     "commit": "\r\necho \"输入提交信息\"\r\n\r\nread name\r\n\r\ngit add -A && git commit -m \"$name\" && git push",
     "pull": "git pull",
     "git": [
