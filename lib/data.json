@@ -1,10 +1,11 @@
 {
     "bs": "browser-sync start --server --files \"${files}\" --directory --index \"${index}\" --open \"external\" --reload-debounce --no-notify",
-    "commit": "\r\necho \"输入提交信息\"\r\n\r\nread name\r\n\r\ngit add -A && git commit -m \"$name\" && git push",
+    "release": "set -e\r\necho \"Enter release version: \"\r\nread VERSION\r\n\r\nread -p \"Releasing $VERSION - are you sure? (y/n)\" -n 1 -r\r\n\r\necho    # 输出个空行\r\n\r\nif [[ $REPLY =~ ^[Yy]$ ]] \r\nthen\r\n    echo \"Releasing $VERSION ...\"\r\n\r\n    npm run test\r\n\r\n    git add -A\r\n    git commit -m \"[build] $VERSION\"\r\n    npm version $VERSION --message \"release: $VERSION\"\r\n    \r\n    git push\r\n    npm publish\r\nfi",
     "pull": "git pull",
     "git": [
         "pull",
         "commit"
     ],
-    "nodeserver": "http-server -p 8765"
+    "nodeserver": "http-server -p 8765",
+    "commit": "\r\necho \"输入提交信息\"\r\n\r\nread name\r\n\r\ngit add -A && git commit -m \"$name\" && git push"
 }
